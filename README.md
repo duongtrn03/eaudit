@@ -15,6 +15,10 @@ Mở http://localhost:5173, nhập mã 6 hoặc 8 ký tự (ví dụ `ABC123`), 
 
 Ứng dụng cần chạy Node/Express để xử lý các request `/api/*`; deploy riêng thư mục `dist` lên static hosting sẽ không có backend và có thể trả body rỗng/HTML thay cho JSON. Trên dịch vụ Node, dùng build command `npm run build`, start command `npm start`, đặt `NODE_ENV=production`; dịch vụ phải chuyển tiếp request đến cổng `PORT` được cấp.
 
+### Cloudflare Workers
+
+Repo có `wrangler.jsonc` trỏ static assets tới `dist` và Worker xử lý `/api/*`. Trong Cloudflare Workers Builds, dùng build command `npm run build` và deploy command `npx wrangler deploy`. Không deploy `dist` như static-only Pages project: Worker backend cần chạy cùng ứng dụng. API đang dùng mock state trong bộ nhớ, không phải kho lưu trữ bền vững; dữ liệu phiên demo có thể mất khi Worker isolate thay đổi.
+
 ## Quyết định vi phạm
 
 Mock backend giữ trạng thái trong RAM theo `session_id`, không có database. **Mọi loại vi phạm chính thức trong 15 loại đều có trọng số 1; vi phạm thứ hai khóa và tự submit**. Đây là chính sách mock theo yêu cầu, vì tài liệu không có implementation server gốc.
