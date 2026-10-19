@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "../login.html";
+@source "../confirm.html";
+body{margin:0;font-family:ui-sans-serif,system-ui,sans-serif;color:#0f172a;background:#f8fafc}
+button:not(:disabled){cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}
+.hide-scrollbar{scrollbar-width:none}
+.fullscreen-gate{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;background:rgba(15,23,42,.78);padding:16px}
+.exam-notice{position:fixed;top:90px;left:50%;transform:translateX(-50%);z-index:9998;width:min(600px,calc(100% - 32px))}
+:fullscreen{background:#f8fafc;overflow:auto}
