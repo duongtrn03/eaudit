@@ -11,6 +11,10 @@ npm run dev
 
 Mở http://localhost:5173, nhập mã 6 hoặc 8 ký tự (ví dụ `ABC123`), bắt đầu bài thi và cho phép fullscreen. Nếu server cũ đang chạy, dừng và chạy lại để nạp mock backend mới.
 
+## Deploy
+
+Ứng dụng cần chạy Node/Express để xử lý các request `/api/*`; deploy riêng thư mục `dist` lên static hosting sẽ không có backend và có thể trả body rỗng/HTML thay cho JSON. Trên dịch vụ Node, dùng build command `npm run build`, start command `npm start`, đặt `NODE_ENV=production`; dịch vụ phải chuyển tiếp request đến cổng `PORT` được cấp.
+
 ## Quyết định vi phạm
 
 Mock backend giữ trạng thái trong RAM theo `session_id`, không có database. **Mọi loại vi phạm chính thức trong 15 loại đều có trọng số 1; vi phạm thứ hai khóa và tự submit**. Đây là chính sách mock theo yêu cầu, vì tài liệu không có implementation server gốc.

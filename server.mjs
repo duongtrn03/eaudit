@@ -11,4 +11,4 @@ app.use('/api',(req,res)=>{const result=mockResponse(req.method,req.originalUrl.
 if(process.env.NODE_ENV==='production'){
  app.use(express.static('dist'));app.get('/{*path}',(_req,res)=>res.sendFile(new URL('./dist/index.html',import.meta.url).pathname));
 }else{const vite=await createServer({server:{middlewareMode:true,hmr:{server:httpServer}},appType:'spa'});app.use(vite.middlewares)}
-httpServer.listen(Number(process.env.PORT)||5173,'127.0.0.1',()=>console.log('E-Audit local: http://localhost:'+(process.env.PORT||5173)));
+httpServer.listen(Number(process.env.PORT)||5173,process.env.HOST||'0.0.0.0',()=>console.log('E-Audit listening on port '+(process.env.PORT||5173)));

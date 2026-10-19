@@ -7,7 +7,17 @@ export async function api(path, body, options = {}) {
     headers: {'Content-Type': 'application/json'},
     ...(body === undefined ? {} : {body: JSON.stringify({...body, ...(session && path !== 'verify' ? {session_id:session.id} : {})})}),
   });
-  const data = await response.json();
+  const responseText = await response.text();
+  let data;
+  try {
+    if (!responseText.trim()) throw new SyntaxError('empty response body');
+    data = JSON.parse(responseText);
+    if (!data || typeof data !== 'object') throw new TypeError('response JSON must be an object');
+  } catch {
+    const error = new Error(`The API returned an empty or invalid JSON response (HTTP ${response.status}) for "${path}". Make sure the deployed server is running and routes /api requests to the backend.`);
+    error.status = response.status;
+    throw error;
+  }
   if (!response.ok) {
     const reasons={concurrent_session:'Exam session is no longer active. Please sign in again.',submitted:'This exam has already been submitted.',timeout:'The exam time has expired.',absent_too_long:'The exam session ended after prolonged absence.'};
     const error=new Error(data.error || reasons[data.reason] || 'Request failed. Please try again.');error.status=response.status;error.reason=data.reason;throw error;
