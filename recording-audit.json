@@ -1,0 +1,385 @@
+{
+  "inputs": {
+    "events.json": {
+      "sha256": "5d438fcb9f9c126b274f8b9096d34869937cf60ab1a131298bdf55fe4bc8cebd",
+      "records": 282
+    },
+    "manifest.json": {
+      "sha256": "3074a72e72d1f29dd8b0bd8ae700b84ea9765eef96f1fc4dc5a785af149d930b",
+      "records": null
+    },
+    "network.json": {
+      "sha256": "f8864732958d6a099e7eca3fa4db5cef91d3e144658efa5deca2449dc52b69a8",
+      "records": 142
+    },
+    "routes.json": {
+      "sha256": "86a907eab2771724f0725240b67fd9314eb65f19d7643302936cf44fa830a686",
+      "records": 4
+    },
+    "snapshots.json": {
+      "sha256": "b3b40e6899acf3c247ee59856e5cd2d150576d838f0a70d626c330f585a74562",
+      "records": 1000
+    },
+    "snapshot-diffs.json": {
+      "sha256": "fe55e2c324269e477fd1430babb83f628af2960cfffd488c01026583191db9cc",
+      "records": 999
+    },
+    "snapshotMetrics.json": {
+      "sha256": "69a77eb6abffdc6ae03914eff44d74b1a0c84b082c2bca7fc91148c91d00950e",
+      "records": 1892
+    },
+    "timeline.json": {
+      "sha256": "dfebd4171eb65afc98e55bf43810f614f2e15e80fe3b08dd3d6c10c9ac040792",
+      "records": 1006
+    },
+    "visits.json": {
+      "sha256": "a68e1b8b0f83282b47a29955f34fc100479019f8be109d6ca30f4c7528c0fdf1",
+      "records": 6
+    }
+  },
+  "recordingLimited": true,
+  "eventTypes": {
+    "click": 259,
+    "input": 11,
+    "change": 11,
+    "submit": 1
+  },
+  "eventSelectors": {
+    "div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(4)": 168,
+    "div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(4)": 28,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(8)": 3,
+    "div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > button:nth-of-type(2)": 6,
+    "div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > select:nth-of-type(1)": 40,
+    "div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(4)": 1,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(6)": 1,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(7)": 2,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(4)": 3,
+    "div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(2)": 1,
+    "div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1)": 1,
+    "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)": 1,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(3)": 2,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > button:nth-of-type(2) > svg:nth-of-type(1)": 1,
+    "div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(11) > span:nth-of-type(1) > span:nth-of-type(1)": 1,
+    "div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > form:nth-of-type(1) > button:nth-of-type(1)": 1,
+    "div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > button:nth-of-type(1)": 1,
+    "body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1)": 1,
+    "body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)": 5,
+    "div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > form:nth-of-type(1) > div:nth-of-type(1) > input:nth-of-type(1)": 3,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(2)": 1,
+    "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)": 1,
+    "body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1) > button:nth-of-type(1)": 1,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(5)": 1,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(1)": 1,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(9)": 3,
+    "div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button:nth-of-type(10)": 1,
+    "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1)": 1,
+    "body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > form:nth-of-type(1)": 1,
+    "body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)": 1
+  },
+  "apiRequests": {
+    "POST student/verify": 1,
+    "GET student/exam/questions": 2,
+    "POST student/exam/start": 1,
+    "POST student/live/session": 1,
+    "POST student/exam/recording-url": 24,
+    "POST student/exam/answers": 98,
+    "POST student/exam/recording-complete": 12,
+    "POST student/exam/submit": 1,
+    "POST student/exam/recording-seal": 1,
+    "POST student/exam/recording-finalize": 1
+  },
+  "capturePhases": {
+    "settled": 997,
+    "route-entry": 3
+  },
+  "limitedMetricRecords": 883,
+  "timelineKinds": {
+    "snapshot": 1000,
+    "route-visit": 6
+  },
+  "visits": [
+    {
+      "id": "fd13fc6e-cf64-442e-bc67-88219b0ea224",
+      "sessionId": "ee0c58d4-53e6-49fc-bbdf-bfae5d55041a",
+      "routeId": "611e7156-f417-44bf-aab8-845082399d65",
+      "frameId": 0,
+      "url": "https://eaudit-platform.vercel.app/",
+      "startedAt": "2026-10-13T03:19:32.313Z",
+      "endedAt": "2026-10-13T03:19:52.001Z",
+      "sequence": 1,
+      "lastEventId": "f59e4c2d-7e1e-4a5b-a373-3644ff3a3814",
+      "snapshotStatus": "captured"
+    },
+    {
+      "id": "b1951d90-9236-452b-9d34-e0b83e87e63e",
+      "sessionId": "ee0c58d4-53e6-49fc-bbdf-bfae5d55041a",
+      "routeId": "538d2f04-db8c-40da-8708-1b0e74829d93",
+      "frameId": 0,
+      "url": "https://eaudit-platform.vercel.app/confirm",
+      "startedAt": "2026-10-13T03:19:52.007Z",
+      "endedAt": "2026-10-13T03:20:15.549Z",
+      "sequence": 2,
+      "snapshotStatus": "no-dom-capture"
+    },
+    {
+      "id": "eb00d58d-4450-4a3d-9bc6-91afbcb5e302",
+      "sessionId": "ee0c58d4-53e6-49fc-bbdf-bfae5d55041a",
+      "routeId": "538d2f04-db8c-40da-8708-1b0e74829d93",
+      "frameId": 0,
+      "url": "https://eaudit-platform.vercel.app/confirm",
+      "startedAt": "2026-10-13T03:19:52.001Z",
+      "endedAt": "2026-10-13T03:19:52.007Z",
+      "sequence": 3,
+      "lastEventId": "52e81836-df9c-4c85-980a-6e82952499f8",
+      "snapshotStatus": "captured"
+    },
+    {
+      "id": "da12967c-ec20-4cfd-9006-6ef83d3a045c",
+      "sessionId": "ee0c58d4-53e6-49fc-bbdf-bfae5d55041a",
+      "routeId": "3529352d-06ce-4467-94c0-2b375c0c09f0",
+      "frameId": 0,
+      "url": "https://eaudit-platform.vercel.app/exam",
+      "startedAt": "2026-10-13T03:20:15.616Z",
+      "endedAt": "2026-10-13T04:20:04.567Z",
+      "sequence": 4,
+      "snapshotStatus": "no-dom-capture"
+    },
+    {
+      "id": "3c6641a2-408f-4860-a5d9-d3796434fa52",
+      "sessionId": "ee0c58d4-53e6-49fc-bbdf-bfae5d55041a",
+      "routeId": "3529352d-06ce-4467-94c0-2b375c0c09f0",
+      "frameId": 0,
+      "url": "https://eaudit-platform.vercel.app/exam",
+      "startedAt": "2026-10-13T03:20:15.549Z",
+      "endedAt": "2026-10-13T03:20:15.616Z",
+      "sequence": 5,
+      "lastEventId": "5da55972-c783-461c-8932-feb4ddaae9f2",
+      "snapshotStatus": "captured"
+    },
+    {
+      "id": "d20a1cec-acac-4275-901a-878959068266",
+      "sessionId": "ee0c58d4-53e6-49fc-bbdf-bfae5d55041a",
+      "routeId": "df7328a2-f025-4e2d-8414-3b778fc5504a",
+      "frameId": 0,
+      "url": "https://eaudit-platform.vercel.app/submit",
+      "startedAt": "2026-10-13T04:20:04.567Z",
+      "sequence": 6,
+      "snapshotStatus": "no-dom-capture"
+    }
+  ],
+  "routes": [
+    {
+      "pathname": "https://eaudit-platform.vercel.app/exam",
+      "snapshotStatus": "captured"
+    },
+    {
+      "pathname": "https://eaudit-platform.vercel.app/confirm",
+      "snapshotStatus": "captured"
+    },
+    {
+      "pathname": "https://eaudit-platform.vercel.app/",
+      "snapshotStatus": "captured"
+    },
+    {
+      "pathname": "https://eaudit-platform.vercel.app/submit",
+      "snapshotStatus": "not-captured-storage-limit-or-unobserved"
+    }
+  ],
+  "largeDiffs": [
+    {
+      "snapshotId": "a40bdc69-e742-478b-b9d2-dcb6712d986e",
+      "previousSnapshotId": "e77f36d1-2eb7-44d2-a2f1-33266ad27fd7",
+      "commonPrefixCharacters": 2819,
+      "commonSuffixCharacters": 440,
+      "removedCharacters": 52337,
+      "addedCharacters": 52396,
+      "beforePreview": "40</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color",
+      "afterPreview": "37</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color"
+    },
+    {
+      "snapshotId": "2f7f26c0-c89c-4850-b66f-12f3536b857d",
+      "previousSnapshotId": "e64e2cab-48b6-44af-829c-3084c575fe6c",
+      "commonPrefixCharacters": 2820,
+      "commonSuffixCharacters": 440,
+      "removedCharacters": 48739,
+      "addedCharacters": 50965,
+      "beforePreview": "9</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors",
+      "afterPreview": "3</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors"
+    },
+    {
+      "snapshotId": "e95a470e-0a66-47f1-bf42-82ee5d2a95a1",
+      "previousSnapshotId": "4ae3ed13-116f-473e-91b9-6909ad39cd40",
+      "commonPrefixCharacters": 2820,
+      "commonSuffixCharacters": 168,
+      "removedCharacters": 48125,
+      "addedCharacters": 48319,
+      "beforePreview": "5</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors",
+      "afterPreview": "0</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors"
+    },
+    {
+      "snapshotId": "67123c77-c8e0-4238-8769-a232c058a03d",
+      "previousSnapshotId": "706daadc-defa-41e9-b5b1-2bb8a32772af",
+      "commonPrefixCharacters": 2819,
+      "commonSuffixCharacters": 232,
+      "removedCharacters": 44380,
+      "addedCharacters": 47994,
+      "beforePreview": "34</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color",
+      "afterPreview": "29</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color"
+    },
+    {
+      "snapshotId": "e140259d-2361-43e1-a36b-90e1e0fa0a27",
+      "previousSnapshotId": "d5a92b35-57ed-4feb-8b5c-302307b00870",
+      "commonPrefixCharacters": 2820,
+      "commonSuffixCharacters": 815,
+      "removedCharacters": 45995,
+      "addedCharacters": 45998,
+      "beforePreview": "4</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors",
+      "afterPreview": "3</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors"
+    },
+    {
+      "snapshotId": "d39b840f-af1b-42c9-810e-b0108148e9cb",
+      "previousSnapshotId": "0821b5e6-4281-4336-a758-bd5867bae147",
+      "commonPrefixCharacters": 2820,
+      "commonSuffixCharacters": 440,
+      "removedCharacters": 39063,
+      "addedCharacters": 51594,
+      "beforePreview": "9</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors",
+      "afterPreview": "6</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors"
+    },
+    {
+      "snapshotId": "50c949ed-5bea-46f7-9221-06a09b327231",
+      "previousSnapshotId": "f183b183-4b73-473f-9885-0da8bdb66229",
+      "commonPrefixCharacters": 2820,
+      "commonSuffixCharacters": 440,
+      "removedCharacters": 45761,
+      "addedCharacters": 44841,
+      "beforePreview": "9</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors",
+      "afterPreview": "3</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors"
+    },
+    {
+      "snapshotId": "5af4b03f-2435-4f18-87c9-56eb039b57af",
+      "previousSnapshotId": "bf52ac05-01c8-485c-ac71-0a5007ddc558",
+      "commonPrefixCharacters": 2819,
+      "commonSuffixCharacters": 440,
+      "removedCharacters": 52690,
+      "addedCharacters": 36838,
+      "beforePreview": "10</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color",
+      "afterPreview": "06</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color"
+    },
+    {
+      "snapshotId": "706daadc-defa-41e9-b5b1-2bb8a32772af",
+      "previousSnapshotId": "f27cc421-160e-45e7-a569-5645157522b4",
+      "commonPrefixCharacters": 2820,
+      "commonSuffixCharacters": 440,
+      "removedCharacters": 45134,
+      "addedCharacters": 44171,
+      "beforePreview": "9</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors",
+      "afterPreview": "4</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors"
+    },
+    {
+      "snapshotId": "002313af-dc28-41d4-a07f-9c29e1f7304d",
+      "previousSnapshotId": "f6c828c7-126c-4f93-b218-7f0e234b1e37",
+      "commonPrefixCharacters": 2819,
+      "commonSuffixCharacters": 440,
+      "removedCharacters": 43507,
+      "addedCharacters": 43650,
+      "beforePreview": "40</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color",
+      "afterPreview": "35</div></div><button class=\"inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-color"
+    }
+  ],
+  "questionTransitions": [
+    {
+      "timestamp": "2026-10-13T03:20:48.552Z",
+      "question": 1,
+      "language": "java"
+    },
+    {
+      "timestamp": "2026-10-13T03:25:37.539Z",
+      "question": 2,
+      "language": "css"
+    },
+    {
+      "timestamp": "2026-10-13T03:31:35.541Z",
+      "question": 3,
+      "language": "plaintext"
+    },
+    {
+      "timestamp": "2026-10-13T03:31:43.686Z",
+      "question": 4,
+      "language": "plaintext"
+    },
+    {
+      "timestamp": "2026-10-13T03:32:51.541Z",
+      "question": 5,
+      "language": "plaintext"
+    },
+    {
+      "timestamp": "2026-10-13T03:39:58.538Z",
+      "question": 6,
+      "language": "plaintext"
+    },
+    {
+      "timestamp": "2026-10-13T03:42:31.539Z",
+      "question": 7,
+      "language": "javascript"
+    },
+    {
+      "timestamp": "2026-10-13T03:45:20.764Z",
+      "question": 8,
+      "language": "javascript"
+    },
+    {
+      "timestamp": "2026-10-13T03:45:37.537Z",
+      "question": 9,
+      "language": "javascript"
+    },
+    {
+      "timestamp": "2026-10-13T03:48:31.461Z",
+      "question": 10,
+      "language": "javascript"
+    }
+  ],
+  "questions": {
+    "1": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/a2049c0a-4a8e-4870-a6c9-282def680643.html",
+      "contentSha256": "18ffd8825f81b99f3f56a45b01ca6b988034f604f5707782917b9725ed70eb6c"
+    },
+    "2": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/7730f7c3-692e-487a-8856-5fc76f654a0c.html",
+      "contentSha256": "1737bec85574679af3a21951df09d97bb155f66db95f58141c5b09540a51dd19"
+    },
+    "3": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/77275905-bb88-4b8d-949b-a98fa1c77937.html",
+      "contentSha256": "5daf90a07e72941e79e5bbfca3326145523dcfc5481afbbed362b4906e29ba2a"
+    },
+    "4": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/db2a5a59-1c38-4398-a804-72f6bc81a001.html",
+      "contentSha256": "04d65b64e04b0a8474df1a7a3995dc3ede511c8315c01462bdeb15a4e728e641"
+    },
+    "5": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/e5c78400-2b7c-4458-9904-47240fdbda20.html",
+      "contentSha256": "95a2772cdbfb87f5ccaa37a5afd7220eef56d9f2b77459802972b9db133639ae"
+    },
+    "6": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/9b2df6fe-8e8f-4baa-a238-1cdc9018473f.html",
+      "contentSha256": "06265cab58c367d75d58e1191777a0902a38edeb98dd5e6ca438a24c182b20a4"
+    },
+    "7": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/0ae7d6a7-9911-45f5-8323-93273a2de12e.html",
+      "contentSha256": "f7299a207f2ad7d4184c6448741b2dd477bcd3eb18254d4d55b8dd8b101d04c9"
+    },
+    "8": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/d09d8365-2a57-4b5a-a032-8347c8c2229e.html",
+      "contentSha256": "81c0027ab27087e5f00a43b5da2a54f4d73bdbb371953002397744754131b62b"
+    },
+    "9": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/f5419d19-90ee-4485-9ee2-ad618fcd4c74.html",
+      "contentSha256": "afea032b6e07c390bba7224ce7156138b6be8f159798b2e6b5eebcec57207c7e"
+    },
+    "10": {
+      "source": "routes/3529352d-06ce-4467-94c0-2b375c0c09f0/states/a40197c0-0edb-41f0-a454-9a46d864cfc1.html",
+      "contentSha256": "4e1458971c7c289f0c364b57b756fd18fdd95d5cd59479e5c87ebe5732cf95f6"
+    }
+  },
+  "lastDomCapture": "2026-10-13T03:51:07.462Z"
+}
